@@ -17,7 +17,7 @@ func main() {
 		fmt.Fprintln(rw, index)
 	}))
 	r.Get("/mystyle.css", http.HandlerFunc(func(rw http.ResponseWriter, r *http.Request) {
-		log.Printf("serving index from %s", iid)
+		log.Printf("serving css from %s", iid)
 		rw.Header().Set("Content-Type", "text/css")
 		fmt.Fprintln(rw, css)
 	}))
@@ -32,13 +32,13 @@ const index = `
 		<link rel="stylesheet" href="mystyle.css">
 	</head>
 	<body>
-		<h1 class='header'>New for demo</h1>
+		<h1 class='header'>New Demo Again</h1>
 	</body>
 </html>
 `
 
 const css = `
 .header {
-	color: red;
+	color: purple;
 }
 `
