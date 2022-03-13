@@ -32,13 +32,13 @@ const index = `
 		<link rel="stylesheet" href="mystyle.css">
 	</head>
 	<body>
-		<h1 class='header'>New</h1>
+		<h1 class='header'>New for demo</h1>
 	</body>
 </html>
 `
 
 const css = `
 .header {
-	color: green;
+	color: red;
 }
 `
